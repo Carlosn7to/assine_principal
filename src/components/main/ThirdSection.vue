@@ -148,6 +148,14 @@ export default {
       background-color: #EF3A29;
       color: #fff;
       font-weight: 600;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: #EF3A29;
+        border-color: #fff;
+      }
     }
   }
 

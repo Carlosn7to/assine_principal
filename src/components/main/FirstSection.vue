@@ -47,4 +47,29 @@ export default {
   }
 }
 
+
+@media (min-width: 800px) and (min-height: 720px) {
+  #first-section {
+    img:nth-child(1) {
+      width: 380px;
+    }
+  }
+}
+
+@media (min-width: 1150px) and (min-height: 720px) {
+  #first-section {
+    img:nth-child(1) {
+      width: 420px;
+    }
+  }
+}
+
+@media (min-width: 1150px) and (min-height: 1000px) {
+  #first-section {
+    img:nth-child(1) {
+      width: 600px;
+    }
+  }
+}
+
 </style>
