@@ -267,6 +267,7 @@ export default {
 
     #footer {
       #logo {
+        justify-content: center;
         a {
           img {
             width: 450px;

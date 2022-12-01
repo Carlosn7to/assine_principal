@@ -22,10 +22,29 @@ export default {
   padding: 2vh 15% 0 15%;
 
   img:nth-child(1) {
-    width: 300px;
+    width: 240px;
     height: auto;
   }
 
+}
+
+@media (min-width: 600px) {
+  #first-section {
+
+    img:nth-child(1) {
+      width: 270px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  #first-section {
+    height: 55vh;
+
+    img:nth-child(1) {
+      width: 420px;
+    }
+  }
 }
 
 </style>

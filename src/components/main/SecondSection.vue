@@ -108,7 +108,7 @@ export default {
         z-index: 3;
 
         img {
-          width: 300px;
+          width: 200px;
           height: auto;
         }
       }
@@ -129,6 +129,7 @@ export default {
 
 @media (min-width: 800px) {
   #second-section {
+    height: 60vh;
     #container {
 
       #card-mobile {
@@ -142,12 +143,12 @@ export default {
         justify-content: center;
         align-items: center;
         img {
-          width: 220px;
+          width: 200px;
         }
 
         a:nth-child(2) {
           img {
-            width: 300px;
+            width: 250px;
           }
         }
       }
