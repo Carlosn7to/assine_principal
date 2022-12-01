@@ -40,8 +40,6 @@ export default {
   methods: {
     tradePlan: function (action) {
 
-
-
       if(action === 0) {
 
         if(this.plan === 0) {
@@ -129,7 +127,7 @@ export default {
 
 @media (min-width: 800px) {
   #second-section {
-    height: 60vh;
+    height: 50vh;
     #container {
 
       #card-mobile {
@@ -143,12 +141,12 @@ export default {
         justify-content: center;
         align-items: center;
         img {
-          width: 200px;
+          width: 230px;
         }
 
         a:nth-child(2) {
           img {
-            width: 250px;
+            width: 300px;
           }
         }
       }
@@ -158,17 +156,45 @@ export default {
 
 @media (min-width: 1150px) {
   #second-section {
-    height: 75vh;
+    height: 65vh;
     #container {
       #card-web {
 
         img {
-          width: 280px;
+          width: 320px;
         }
 
         a:nth-child(2) {
           img {
-            width: 320px;
+            width: 370px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-height: 800px) {
+  #second-section {
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 260px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-height: 1000px) {
+  #second-section {
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 300px;
           }
         }
       }

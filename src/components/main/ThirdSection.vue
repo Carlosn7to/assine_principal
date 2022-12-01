@@ -141,7 +141,7 @@ export default {
     }
 
     input[type=submit] {
-      height: 4vh;
+      height: 45px;
       border-radius: 5px;
       outline: none;
       border: 1px solid #EF3A29;

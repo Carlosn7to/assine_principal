@@ -39,16 +39,16 @@ export default {
 
 @media (min-width: 1150px) {
   #first-section {
-    height: 55vh;
+    height: 85vh;
 
     img:nth-child(1) {
-      width: 420px;
+      width: 580px;
     }
   }
 }
 
 
-@media (min-width: 800px) and (min-height: 720px) {
+@media (min-width: 800px){
   #first-section {
     img:nth-child(1) {
       width: 380px;
@@ -56,16 +56,37 @@ export default {
   }
 }
 
-@media (min-width: 1150px) and (min-height: 720px) {
+
+@media (min-height: 500px) {
   #first-section {
+    height: 70vh;
     img:nth-child(1) {
-      width: 420px;
+      width: 350px;
+    }
+  }
+}
+
+@media (min-height: 600px) {
+  #first-section {
+    height: 50vh;
+    img:nth-child(1) {
+      width: 400px;
+    }
+  }
+}
+
+@media (min-height: 900px) {
+  #first-section {
+    height: 40vh;
+    img:nth-child(1) {
+      width: 400px;
     }
   }
 }
 
 @media (min-width: 1150px) and (min-height: 900px) {
   #first-section {
+    height: 50vh;
     img:nth-child(1) {
       width: 550px;
     }
