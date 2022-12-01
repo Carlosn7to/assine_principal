@@ -1,5 +1,5 @@
 <template>
-  <section id="third-section" :style="{ backgroundImage: 'url(' + require('@/assets/main/img/bg_footer.png') + ')' }">
+  <section id="third-section" :style="{ backgroundImage: 'url(' + require('@/assets/main/editado/footer.png') + ')' }">
     <form action="#" name="assine">
       <span>Quero ter internet 100% FIBRA</span>
       <div class="inputs">
@@ -38,7 +38,9 @@
         </p>
       </div>
       <div id="logo">
-        <img :src="require('@/assets/main/img/ASSINATURA.png')" alt="">
+        <a href="https://agetelecom.com.br">
+          <img :src="require('@/assets/main/img/ASSINATURA.png')" alt="">
+        </a>
       </div>
     </div>
   </section>
@@ -65,15 +67,15 @@ export default {
   flex-direction: column;
   form {
 
-    width: 250px;
-    padding: 2vh 5vw 4vh 5vw;
-    border-radius: 5px;
+    width: 270px;
+    padding: 2vh 30px 4vh 30px;
+    border-radius: 7px;
 
     background-color: #07133A;
 
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    gap: 1.5vh;
 
     position: relative;
     top: -5vh;
@@ -89,11 +91,11 @@ export default {
     .inputs {
       display: flex;
       flex-direction: column;
-      gap: 2vh;
+      gap: 1.5vh;
 
       input[type=text] {
         padding: 10px 15px;
-        border-radius: 5px;
+        border-radius: 3px;
         font-size: 1.4rem;
         outline: none;
         border: #fff 1px solid;
@@ -101,13 +103,13 @@ export default {
     }
 
     input[type=submit] {
-      height: 5vh;
+      height: 4vh;
       border-radius: 5px;
       outline: none;
       border: 1px solid #EF3A29;
       background-color: #EF3A29;
       color: #fff;
-      font-weight: 800;
+      font-weight: 600;
     }
   }
 
@@ -117,12 +119,12 @@ export default {
 
     display: flex;
     justify-content: space-between;
-    gap: 2vh;
+    gap: 1vh;
 
     #info {
       display: flex;
       flex-direction: column;
-      gap: 2vh;
+      gap: 1vh;
 
       max-width: 50%;
 
@@ -138,14 +140,14 @@ export default {
 
         a {
           img {
-            width: 7vw;
+            width: 30px;
             height: auto;
           }
         }
       }
 
       p {
-        font-size: .4rem;
+        font-size: .6rem;
         text-align: justify;
         color: #fff;
 
@@ -161,11 +163,79 @@ export default {
       display: flex;
       align-items: flex-end;
       img {
-        width: 100%;
+        width: 150px;
         height: auto;
       }
     }
 
+  }
+}
+
+@media (min-width: 600px) {
+  #third-section {
+    form {
+      width: 350px;
+    }
+
+    #footer {
+      #logo {
+        a {
+          img {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  #third-section {
+    form {
+      width: 400px;
+    }
+
+    #footer {
+      #info {
+        h1 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+
+        #socials {
+          a {
+            img {
+              width: 40px;
+            }
+          }
+        }
+      }
+
+      #logo {
+        a {
+          img {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  #third-section {
+
+    #footer {
+      #logo {
+        a {
+          img {
+            width: 450px;
+          }
+        }
+      }
+    }
   }
 }
 

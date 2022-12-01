@@ -1,7 +1,6 @@
 <template>
-  <section id="first-section" :style="{ backgroundImage: 'url(' + require('@/assets/main/img/TOPO.png') + ')' }">
-    <img :src="require('@/assets/main/img/MODELO.png')" alt="">
-
+  <section id="first-section">
+    <img :src="require('@/assets/main/editado/first_section.png')" alt="">
   </section>
 </template>
 
@@ -15,20 +14,18 @@ export default {
 
 #first-section {
   width: 100vw;
-  height: 40vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 35vh;
+  background-color: #FB7411;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding: 2vh 15% 0 15%;
 
-  img {
-    width: 45%;
+  img:nth-child(1) {
+    width: 300px;
     height: auto;
-    display: block;
-    position: relative;
-    left: -5%;
   }
+
 }
 
 </style>

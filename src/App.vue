@@ -22,6 +22,25 @@ html {
   overflow-x: hidden;
 }
 
+@media (min-width: 600px ) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 800px ) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 900px ) {
+  html {
+    font-size: 100%;
+  }
+}
+
+
 #app {
 }
 

@@ -3,16 +3,27 @@
     <div id="container" :style="{ backgroundImage: 'url(' + require('@/assets/main/img/fibras.png') + ')' }">
       <div id="card-mobile">
         <i class="fi fi-rs-angle-left" @click="tradePlan(0)"></i>
-        <a href="#" v-if="plan === 0">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+com+DirectGO!" target="_blank" v-show="plan === 0">
           <img :src="require('@/assets/main/img/740.png')" alt="">
         </a>
-        <a href="#" v-if="plan === 1">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+com+DirectGO!" target="_blank" v-show="plan === 1">
           <img :src="require('@/assets/main/img/480.png')" alt="">
         </a>
-        <a href="#" v-if="plan === 2">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+com+DirectGO!" target="_blank" v-show="plan === 2">
           <img :src="require('@/assets/main/img/1GB.png')" alt="">
         </a>
         <i class="fi fi-rs-angle-right" @click="tradePlan(1)"></i>
+      </div>
+      <div id="card-web">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+com+DirectGO!" target="_blank">
+          <img :src="require('@/assets/main/img/740.png')" alt="">
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+com+DirectGO!" target="_blank" style=" position: relative; top: -10%">
+          <img :src="require('@/assets/main/img/480.png')" alt="">
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+com+DirectGO!" target="_blank">
+          <img :src="require('@/assets/main/img/1GB.png')" alt="">
+        </a>
       </div>
     </div>
   </section>
@@ -30,18 +41,19 @@ export default {
     tradePlan: function (action) {
 
 
+
       if(action === 0) {
 
         if(this.plan === 0) {
-          this.plan = 2
+          return this.plan = 2
         }
 
         if(this.plan === 1) {
-          this.plan = 0
+          return this.plan = 0
         }
 
         if(this.plan === 2) {
-          this.plan = 1
+          return this.plan = 1
         }
 
       }
@@ -50,15 +62,15 @@ export default {
       if(action === 1) {
 
         if(this.plan === 0) {
-          this.plan = 1
+          return this.plan = 1
         }
 
         if(this.plan === 1) {
-          this.plan = 2
+          return this.plan = 2
         }
 
         if(this.plan === 2) {
-          this.plan = 0
+          return this.plan = 0
         }
 
       }
@@ -73,7 +85,7 @@ export default {
 
 #second-section {
   width: 100vw;
-  height: 65vh;
+  height: 50vh;
   background-size: cover;
 
   #container {
@@ -83,7 +95,7 @@ export default {
     background-size: 150%;
     background-position-y: 50%;
 
-    #card-mobile {
+    #card-mobile  {
       width: 100%;
       height: 100%;
       display: flex;
@@ -93,9 +105,10 @@ export default {
       a {
         position: relative;
         top: -10%;
+        z-index: 3;
 
         img {
-          width: 70vw;
+          width: 300px;
           height: auto;
         }
       }
@@ -105,6 +118,57 @@ export default {
         top: -10%;
         font-size: 5rem;
         color: #18183B;
+      }
+    }
+
+    #card-web {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  #second-section {
+    #container {
+
+      #card-mobile {
+        display: none;
+      }
+
+      #card-web {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 220px;
+        }
+
+        a:nth-child(2) {
+          img {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  #second-section {
+    #container {
+      #card-web {
+
+        img {
+          width: 280px;
+        }
+
+        a:nth-child(2) {
+          img {
+            width: 320px;
+          }
+        }
       }
     }
   }
