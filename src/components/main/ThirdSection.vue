@@ -1,11 +1,11 @@
 <template>
   <section id="third-section" :style="{ backgroundImage: 'url(' + require('@/assets/main/editado/footer.png') + ')' }">
-    <form action="#" name="assine">
+    <form action="#" @submit.prevent="postLead" name="assine">
       <span>Quero ter internet 100% FIBRA</span>
       <div class="inputs">
-        <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off" required>
-        <input type="text" name="email" id="email" placeholder="Email" autocomplete="off">
-        <input type="text" name="telefone" id="telefone" placeholder="Telefone" autocomplete="off" required>
+        <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off" required v-model="payload.name">
+        <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" v-model="payload.email">
+        <input type="text" name="telefone" id="telefone" placeholder="Telefone" autocomplete="off" required v-model="payload.tel">
       </div>
       <input type="submit" value="ENVIAR">
     </form>
@@ -47,8 +47,46 @@
 </template>
 
 <script>
+
+import axios from "axios";
+
 export default {
-  name: "ThirdSection"
+  name: "ThirdSection",
+  data () {
+    return {
+      payload: {
+        name: '',
+        email: '',
+        tel: ''
+      },
+      msg: null,
+      plan: ''
+    }
+  },
+  methods: {
+    postLead: function () {
+      axios({
+        url: 'https://v1.ageportal.agetelecom.com.br/api/assine/leads',
+        method: 'post',
+        data: this.payload
+      }).then((res) => {
+        this.payload.name = ''
+        this.payload.email = ''
+        this.payload.tel = ''
+        alert(res.data.msg)
+      })
+    },
+    postCliques: function (plan) {
+      this.plan = plan
+      axios({
+        url: 'https://v1.ageportal.agetelecom.com.br/api/assine/cliques',
+        method: 'post',
+        data: {
+          plan: this.plan
+        }
+      })
+    }
+  }
 }
 </script>
 
