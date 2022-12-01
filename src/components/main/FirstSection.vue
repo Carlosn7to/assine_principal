@@ -64,10 +64,10 @@ export default {
   }
 }
 
-@media (min-width: 1150px) and (min-height: 1000px) {
+@media (min-width: 1150px) and (min-height: 900px) {
   #first-section {
     img:nth-child(1) {
-      width: 600px;
+      width: 550px;
     }
   }
 }

@@ -158,6 +158,7 @@ export default {
 
 @media (min-width: 1150px) {
   #second-section {
+    height: 75vh;
     #container {
       #card-web {
 
