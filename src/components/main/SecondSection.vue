@@ -156,17 +156,17 @@ export default {
 
 @media (min-width: 1150px) {
   #second-section {
-    height: 65vh;
+    height: 85vh;
     #container {
       #card-web {
 
         img {
-          width: 320px;
+          width: 280px;
         }
 
         a:nth-child(2) {
           img {
-            width: 370px;
+            width: 340px;
           }
         }
       }

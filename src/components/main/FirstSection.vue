@@ -37,17 +37,6 @@ export default {
   }
 }
 
-@media (min-width: 1150px) {
-  #first-section {
-    height: 85vh;
-
-    img:nth-child(1) {
-      width: 580px;
-    }
-  }
-}
-
-
 @media (min-width: 800px){
   #first-section {
     img:nth-child(1) {
@@ -55,6 +44,7 @@ export default {
     }
   }
 }
+
 
 
 @media (min-height: 500px) {
@@ -92,5 +82,17 @@ export default {
     }
   }
 }
+
+
+@media (min-width: 1150px) {
+  #first-section {
+    height: 85vh;
+
+    img:nth-child(1) {
+      width: 580px;
+    }
+  }
+}
+
 
 </style>
