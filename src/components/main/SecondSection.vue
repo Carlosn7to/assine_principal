@@ -16,13 +16,13 @@
       </div>
       <div id="card-web">
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+com+DirectGO!" target="_blank">
-          <img :src="require('@/assets/main/img/740.png')" alt="">
+          <img :src="require('@/assets/main/img/740Mb_desc.png')">
         </a>
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+com+DirectGO!" target="_blank" style=" position: relative; top: -10%">
-          <img :src="require('@/assets/main/img/480.png')" alt="">
+          <img :src="require('@/assets/main/img/480Mb_desc.png')" alt="">
         </a>
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+com+DirectGO!" target="_blank">
-          <img :src="require('@/assets/main/img/1GB.png')" alt="">
+          <img :src="require('@/assets/main/img/1GB_desc.png')" alt="">
         </a>
       </div>
     </div>
