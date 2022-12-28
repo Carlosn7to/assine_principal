@@ -217,81 +217,81 @@ export default {
 
 
 
-//@media (min-width: 800px) {
-//  #second-section {
-//    height: 50vh;
-//    #container {
-//
-//      #card-mobile {
-//        display: none;
-//      }
-//
-//      #card-web {
-//        width: 100%;
-//        height: 100%;
-//        display: flex;
-//        justify-content: center;
-//        align-items: center;
-//        img {
-//          width: 230px;
-//        }
-//
-//        a:nth-child(2) {
-//          img {
-//            width: 300px;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
-//
-//@media (min-width: 1150px) {
-//  #second-section {
-//    height: 85vh;
-//    #container {
-//      #card-web {
-//
-//        img {
-//          width: 280px;
-//        }
-//
-//        a:nth-child(2) {
-//          img {
-//            width: 340px;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
-//
-//@media (min-height: 800px) {
-//  #second-section {
-//    #container {
-//      #card-mobile {
-//        a {
-//          img {
-//            width: 260px;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
-//
-//@media (min-height: 1000px) {
-//  #second-section {
-//    #container {
-//      #card-mobile {
-//        a {
-//          img {
-//            width: 300px;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
+@media (min-width: 800px) {
+  #second-section {
+    height: 50vh;
+    #container {
+
+      #card-mobile {
+        display: none;
+      }
+
+      #card-web {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 230px;
+        }
+
+        a:nth-child(2) {
+          img {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  #second-section {
+    height: 85vh;
+    #container {
+      #card-web {
+
+        img {
+          width: 280px;
+        }
+
+        a:nth-child(2) {
+          img {
+            width: 340px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-height: 800px) {
+  #second-section {
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 260px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-height: 1000px) {
+  #second-section {
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
 
 </style>
