@@ -4,25 +4,25 @@
       <div id="card-mobile">
         <i class="fi fi-rs-angle-left" @click="tradePlan(0)"></i>
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+com+DirectGO!" target="_blank" v-show="plan === 0">
-          <img :src="require('@/assets/main/img/740.png')" alt="">
+          <img :src="require('@/assets/main/img/740_1.png')" alt="">
         </a>
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+com+DirectGO!" target="_blank" v-show="plan === 1">
-          <img :src="require('@/assets/main/img/480.png')" alt="">
+          <img :src="require('@/assets/main/img/480_1.png')" alt="">
         </a>
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+com+DirectGO!" target="_blank" v-show="plan === 2">
-          <img :src="require('@/assets/main/img/1GB.png')" alt="">
+          <img :src="require('@/assets/main/img/1GB_1.png')" alt="">
         </a>
         <i class="fi fi-rs-angle-right" @click="tradePlan(1)"></i>
       </div>
       <div id="card-web">
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+com+DirectGO!" target="_blank">
-          <img :src="require('@/assets/main/img/740Mb_desc.png')">
+          <img :src="require('@/assets/main/img/740_1.png')">
         </a>
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+com+DirectGO!" target="_blank" style=" position: relative; top: -10%">
-          <img :src="require('@/assets/main/img/480Mb_desc.png')" alt="">
+          <img :src="require('@/assets/main/img/480_1.png')" alt="">
         </a>
         <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+com+DirectGO!" target="_blank">
-          <img :src="require('@/assets/main/img/1GB_desc.png')" alt="">
+          <img :src="require('@/assets/main/img/1GB_1.png')" alt="">
         </a>
       </div>
     </div>
@@ -125,62 +125,13 @@ export default {
   }
 }
 
-@media (min-width: 800px) {
-  #second-section {
-    height: 50vh;
-    #container {
-
-      #card-mobile {
-        display: none;
-      }
-
-      #card-web {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 230px;
-        }
-
-        a:nth-child(2) {
-          img {
-            width: 300px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1150px) {
-  #second-section {
-    height: 85vh;
-    #container {
-      #card-web {
-
-        img {
-          width: 280px;
-        }
-
-        a:nth-child(2) {
-          img {
-            width: 340px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-height: 800px) {
+@media (min-width: 400px) and (min-height: 600px) {
   #second-section {
     #container {
       #card-mobile {
         a {
           img {
-            width: 260px;
+            width: 250px;
           }
         }
       }
@@ -188,18 +139,159 @@ export default {
   }
 }
 
-@media (min-height: 1000px) {
+@media (min-width: 400px) and (min-height: 800px) {
   #second-section {
+    height: 40vh;
     #container {
       #card-mobile {
         a {
           img {
-            width: 300px;
+            width: 270px;
           }
         }
       }
     }
   }
 }
+
+@media (min-width: 400px) and (min-height: 1000px) {
+  #second-section {
+    height: 35vh;
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) and (min-height: 1200px) {
+  #second-section {
+    height: 28vh;
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) and (min-height: 1400px) {
+  #second-section {
+    height: 24vh;
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) and (min-height: 1600px) {
+  #second-section {
+    height: 21vh;
+    #container {
+      #card-mobile {
+        a {
+          img {
+            width: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//@media (min-width: 800px) {
+//  #second-section {
+//    height: 50vh;
+//    #container {
+//
+//      #card-mobile {
+//        display: none;
+//      }
+//
+//      #card-web {
+//        width: 100%;
+//        height: 100%;
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        img {
+//          width: 230px;
+//        }
+//
+//        a:nth-child(2) {
+//          img {
+//            width: 300px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width: 1150px) {
+//  #second-section {
+//    height: 85vh;
+//    #container {
+//      #card-web {
+//
+//        img {
+//          width: 280px;
+//        }
+//
+//        a:nth-child(2) {
+//          img {
+//            width: 340px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-height: 800px) {
+//  #second-section {
+//    #container {
+//      #card-mobile {
+//        a {
+//          img {
+//            width: 260px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-height: 1000px) {
+//  #second-section {
+//    #container {
+//      #card-mobile {
+//        a {
+//          img {
+//            width: 300px;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
 
 </style>
