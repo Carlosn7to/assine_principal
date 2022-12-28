@@ -2,26 +2,26 @@
   <section id="second-section" :style="{ backgroundImage: 'url(' + require('@/assets/main/img/bg amarelo.png') + ')' }">
     <div id="container" :style="{ backgroundImage: 'url(' + require('@/assets/main/img/fibras.png') + ')' }">
       <div id="card-mobile">
-        <i class="fi fi-rs-angle-left" @click="tradePlan(0)"></i>
-        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+com+DirectGO!" target="_blank" v-show="plan === 0">
+        <i class="fi fi-rr-angle-left" @click="tradePlan(0)"></i>
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb!" target="_blank" v-show="plan === 0">
           <img :src="require('@/assets/main/img/740_1.png')" alt="">
         </a>
-        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+com+DirectGO!" target="_blank" v-show="plan === 1">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb!" target="_blank" v-show="plan === 1">
           <img :src="require('@/assets/main/img/480_1.png')" alt="">
         </a>
-        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+com+DirectGO!" target="_blank" v-show="plan === 2">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb!" target="_blank" v-show="plan === 2">
           <img :src="require('@/assets/main/img/1GB_1.png')" alt="">
         </a>
-        <i class="fi fi-rs-angle-right" @click="tradePlan(1)"></i>
+        <i class="fi fi-rr-angle-right" @click="tradePlan(1)"></i>
       </div>
       <div id="card-web">
-        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb+com+DirectGO!" target="_blank">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+740Mb!" target="_blank">
           <img :src="require('@/assets/main/img/740_1.png')">
         </a>
-        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb+com+DirectGO!" target="_blank" style=" position: relative; top: -10%">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+480Mb!" target="_blank" style=" position: relative; top: -10%">
           <img :src="require('@/assets/main/img/480_1.png')" alt="">
         </a>
-        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb+com+DirectGO!" target="_blank">
+        <a href="https://api.whatsapp.com/send/?phone=556140404040&text=Quero+contratar+1Gb!" target="_blank">
           <img :src="require('@/assets/main/img/1GB_1.png')" alt="">
         </a>
       </div>
