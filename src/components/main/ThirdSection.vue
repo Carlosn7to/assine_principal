@@ -1,11 +1,38 @@
 <template>
   <section id="third-section" :style="{ backgroundImage: 'url(' + require('@/assets/main/editado/footer.png') + ')' }">
     <form action="#" @submit.prevent="postLead" name="assine">
-      <span>Quero ter internet 100% FIBRA</span>
+      <span>Quero receber uma oferta especial!</span>
       <div class="inputs">
         <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off" required v-model="payload.name">
-        <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" v-model="payload.email">
-        <input type="text" name="telefone" id="telefone" placeholder="Telefone" autocomplete="off" required v-model="payload.tel">
+        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required v-model="payload.email">
+        <input type="text" name="telefone" id="telefone" placeholder="(99) 99999-9999 " autocomplete="off" required v-model="payload.tel">
+        <select required>
+          <option value="">--- Selecione sua cidade ---</option>
+          <option value="Arniqueiras">Arniqueiras</option>
+          <option value="Ceilândia">Ceilândia</option>
+          <option value="Gama">Gama</option>
+          <option value="Jardim_Botânico">Jardim Botânico</option>
+          <option value="Lago_Norte">Lago Norte</option>
+          <option value="Lago_Sul">Lago Sul</option>
+          <option value="Núcleo_Bandeirante">Núcleo Bandeirante</option>
+          <option value="Paranoá">Paranoá</option>
+          <option value="Park_Way">Park Way</option>
+          <option value="Guará">Guará</option>
+          <option value="Recanto_da_Emas">Recanto da Emas</option>
+          <option value="Riacho_Fundo_I">Riacho Fundo I</option>
+          <option value="Riacho_Fundo_II">Riacho Fundo II</option>
+          <option value="SAAN">SAAN</option>
+          <option value="Samambaia">Samambaia</option>
+          <option value="Santa_Maria">Santa Maria</option>
+          <option value="SIA">SIA</option>
+          <option value="Sobradinho_I">Sobradinho I</option>
+          <option value="Sobradinho_II">Sobradinho II</option>
+          <option value="SOF_Sul">SOF Sul</option>
+          <option value="Taguatinga">Taguatinga</option>
+          <option value="Taquari">Taquari</option>
+          <option value="Varjão">Varjão</option>
+          <option value="Vicente_Pires">Vicente Pires</option>
+        </select>
       </div>
       <input type="submit" value="ENVIAR">
     </form>
@@ -13,16 +40,16 @@
       <div id="info">
         <h1>Conheça outras ofertas em nossas redes</h1>
         <div id="socials">
-          <a href="#">
+          <a href="https://www.instagram.com/agetelecom/" target="_blank">
             <img :src="require('@/assets/main/img/INSTAGRAM.png')" alt="">
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/AgeTelecom/" target="_blank">
             <img :src="require('@/assets/main/img/FACEBOOK.png')" alt="">
           </a>
-          <a href="#">
-            <img :src="require('@/assets/main/img/YOUTUBE.png')" alt="">
-          </a>
-          <a href="#">
+<!--          <a href="#" target="_blank">-->
+<!--            <img :src="require('@/assets/main/img/YOUTUBE.png')" alt="">-->
+<!--          </a>-->
+          <a href="https://api.whatsapp.com/send/?phone=556140404040" target="_blank">
             <img :src="require('@/assets/main/img/WHATS.png')" alt="">
           </a>
         </div>
@@ -131,7 +158,7 @@ export default {
       flex-direction: column;
       gap: 1.5vh;
 
-      input[type=text] {
+      input[type=text], input[type=email], select {
         padding: 10px 15px;
         border-radius: 3px;
         font-size: 1.4rem;
@@ -253,7 +280,7 @@ export default {
         #socials {
           a {
             img {
-              width: 40px;
+              width: 35px;
             }
           }
         }
