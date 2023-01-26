@@ -6,7 +6,7 @@
         <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off" required v-model="payload.name">
         <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required v-model="payload.email">
         <input type="text" name="telefone" id="telefone" placeholder="(99) 99999-9999 " autocomplete="off" required v-model="payload.tel">
-        <select required>
+        <select required name="city" id="city" v-model="payload.city">
           <option value="">--- Selecione sua cidade ---</option>
           <option value="Arniqueiras">Arniqueiras</option>
           <option value="Ceilândia">Ceilândia</option>
@@ -84,7 +84,8 @@ export default {
       payload: {
         name: '',
         email: '',
-        tel: ''
+        tel: '',
+        city: ''
       },
       msg: null,
       plan: ''
