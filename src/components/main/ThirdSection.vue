@@ -5,7 +5,9 @@
       <div class="inputs">
         <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off" required v-model="payload.name">
         <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required v-model="payload.email">
-        <input type="text" name="telefone" id="telefone" placeholder="(99) 99999-9999 " autocomplete="off" required v-model="payload.tel">
+        <input type="text" name="telefone" id="telefone" placeholder="(99) 99999-9999"
+               autocomplete="off" required v-model="payload.tel"
+               v-maska:[options]>
         <select required name="city" id="city" v-model="payload.city">
           <option value="">--- Selecione sua cidade ---</option>
           <option value="Arniqueiras">Arniqueiras</option>
@@ -77,8 +79,11 @@
 
 import axios from "axios";
 
+import { vMaska } from 'maska';
+
 export default {
   name: "ThirdSection",
+  directives: {maska: vMaska},
   data () {
     return {
       payload: {
@@ -86,6 +91,10 @@ export default {
         email: '',
         tel: '',
         city: ''
+      },
+      options: {
+        mask: "(##) #####-####",
+        eager: true
       },
       msg: null,
       plan: ''
