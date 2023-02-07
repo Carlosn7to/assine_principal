@@ -42,10 +42,10 @@
       <div id="info">
         <h1>Conheça outras ofertas em nossas redes</h1>
         <div id="socials">
-          <a href="https://www.instagram.com/agetelecom/" target="_blank">
+          <a href="https://api.whatsapp.com/send/?phone=556140404040" target="_blank">
             <img :src="require('@/assets/main/img/INSTAGRAM.png')" alt="">
           </a>
-          <a href="https://www.facebook.com/AgeTelecom/" target="_blank">
+          <a href="https://api.whatsapp.com/send/?phone=556140404040" target="_blank">
             <img :src="require('@/assets/main/img/FACEBOOK.png')" alt="">
           </a>
 <!--          <a href="#" target="_blank">-->
